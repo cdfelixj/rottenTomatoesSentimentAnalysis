@@ -2,7 +2,7 @@
 
 ## Dataset
 
-- **Source:** Rotten Tomatoes movie reviews ([BPL05])
+- **Source:** Rotten Tomatoes movie reviews
 - **Access:** Available via the `datasets` Python library
 
 ```python
