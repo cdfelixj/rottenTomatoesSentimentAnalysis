@@ -82,7 +82,7 @@ class SentimentRNN(nn.Module):
 
 ## Model Enhancements
 
-### ** 1. RNN with Trainable Word Embeddings**
+### 1. RNN with Trainable Word Embeddings
 
 Unfreezing the embedding layer allows word vectors to be updated during training.
 
@@ -99,7 +99,7 @@ Unfreezing the embedding layer allows word vectors to be updated during training
 | 9     | 0.0351     | 0.9909        | 0.9430    | 0.7580       |
 | 10    | 0.0202     | 0.9927        | 1.1129    | 0.7495       |
 
-### ** 2. NN with OOV Mitigation (Zero Vector for OOV Words)**
+### 2. NN with OOV Mitigation (Zero Vector for OOV Words)
 
 Assigning OOV words to zero vectors reduces their influence.
 
@@ -150,7 +150,7 @@ Assigning OOV words to zero vectors reduces their influence.
 
 **Benefits:** Bidirectional models capture both past and future context, improving understanding of sentiment in text.
 
-### ** 4. CNN Model**
+### 4. CNN Model
 
 | Epoch | Train Loss | Train Accuracy | Test Loss | Test Accuracy |
 |-------|------------|---------------|-----------|--------------|
@@ -168,7 +168,7 @@ Assigning OOV words to zero vectors reduces their influence.
 
 **Notes:** CNNs efficiently extract local features (n-grams) but are less effective at capturing long-range dependencies compared to bidirectional RNNs.
 
-### ** 5. biLSTM with Attention Mechanism**
+### 5. biLSTM with Attention Mechanism
 
 Added attention to the biLSTM model ([BCB14]), allowing the model to focus on sentimentally important words.
 
